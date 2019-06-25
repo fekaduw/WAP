@@ -1,7 +1,7 @@
 body {
   color: #404040;
   font-size: 11pt;
-  font-family: Georgia, Garamond;
+  font-family: Georgia, Garamond, sans-serif;
   width: 80%;
   margin: auto;
   background: url("../images/silverware.jpg");
@@ -9,7 +9,7 @@ body {
 
 h1 {
   color: #a4a400;
-  font-family: "Lucida Sans Unicode", Helvetica, Arial;
+  font-family: "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
   font-size: 18pt;
   letter-spacing: 0.25em;
   text-decoration: underline;
