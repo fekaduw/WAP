@@ -3,3 +3,11 @@
   font-size: 12px;
   background: #fdefe5;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
