@@ -48,3 +48,7 @@ blockquote {
 blockquote span {
   font-weight: bold;
 }
+
+.deleted {
+  text-decoration: line-through;
+}
