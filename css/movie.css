@@ -33,6 +33,7 @@ h1 {
   font-family: tahoma, verdana, sans-serif;
   text-shadow: 3px 3px #999999;
   text-align: center;
+  padding: 20px;
 }
 
 .overview {
@@ -53,13 +54,15 @@ h1 {
   font-size: 48pt;
   font-weight: bold;
   color: red;
+  vertical-align: top;
 }
 
 .reviews {
   column-count: 2;
-  column-gap: 2px;
-  padding: 5px;
-  width: 530px;
+  column-gap: 5px;
+  padding-left: 8px;
+  padding-top: 10px;
+  width: 540px;
 }
 .reviews .review {
   break-inside: avoid;
@@ -105,9 +108,11 @@ dd ul {
 
 .footer {
   background: #a2b964;
-  position: fixed;
-  bottom: 4px;
-  width: 550px;
+  position: relative;
+  clear: both;
+  left: 0px;
+  bottom: 0px;
+  width: 800px;
   text-align: center;
   padding: 5px;
   border-bottom-left-radius: 15px;
