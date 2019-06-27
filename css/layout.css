@@ -1,6 +1,6 @@
 * {
-  margin: auto;
-  width: 90%;
+  margin: 0;
+  padding: 0;
 }
 
 .heading {
@@ -22,12 +22,9 @@
   font-size: 14pt;
 }
 
-.main {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  grid-template-rows: 200px 200px;
-  align-content: center;
-  margin-left: 30px;
+.main-container {
+  width: 80%;
+  margin: auto;
 }
 
 .floating-left {
@@ -36,6 +33,9 @@
   border-radius: 15px;
   padding: 20px;
   color: #0590a5;
+  float: left;
+  width: 15%;
+  overflow: auto;
 }
 
 .section {
@@ -43,9 +43,10 @@
   border: #c2e9e9 4px solid;
   border-radius: 15px;
   margin-bottom: 10px;
-  height: 200px;
   color: #4da6a8;
-  padding: 20px;
+  overflow: auto;
+  padding: 5px;
+  margin-left: 21%;
 }
 
 .section span {
@@ -57,6 +58,7 @@
     "Lucida Sans", Arial, sans-serif;
   padding-bottom: 10px;
 }
+
 a {
   text-decoration: none;
   color: #4da6a8;
@@ -70,10 +72,5 @@ a:hover {
   width: 150px;
   height: 150px;
   float: right;
-}
-
-.floating-left {
-  clear: both;
-  float: left;
-  /* display: block; */
+  vertical-align: middle;
 }
