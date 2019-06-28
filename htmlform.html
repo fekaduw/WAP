@@ -26,6 +26,7 @@
                 name="firstName"
                 pattern="^[a-zA-Z][a-zA-Z]{1,}"
                 maxlength="15"
+                required
             /></label>
             <label
               >Second Name<br /><input
@@ -33,9 +34,10 @@
                 name="secondName"
                 pattern="^[a-zA-Z][a-zA-Z]{1,}"
                 maxlength="15"
+                required
             /></label>
             <label
-              >Date of birth<br /><input type="date" name="firstName"
+              >Date of birth<br /><input type="date" name="dob" required
             /></label>
             <label
               >Mother’s Maiden Name<br /><input
@@ -43,6 +45,7 @@
                 name="mothersMaidenName"
                 pattern="^[a-zA-Z][a-zA-Z]{1,}"
                 maxlength="25"
+                required
             /></label>
             <label
               >Social Insurance Number (Optional)<br /><input
@@ -78,6 +81,7 @@
                 type="text"
                 name="homeAddress"
                 pattern="^(\w)[\w\s]+"
+                required
             /></label>
             <label
               >Suite/Apt. # (if Applicable)<br /><input
@@ -92,10 +96,11 @@
                 name="city"
                 maxlength="20"
                 pattern="[\w\s]*"
+                required
             /></label>
             <label
               >Province<br />
-              <select name="province">
+              <select name="province" required>
                 <option value="" selected disabled>Select province</option>
                 <option value="AB">AB</option>
                 <option value="BC">BC</option>
@@ -118,12 +123,16 @@
                 name="postalcode"
                 maxlength="2"
                 pattern="^[a-zA-Z][0-9]"
+                required
             /></label>
             <label
-              >Email Address<br /><input type="text" name="homeAddress"
+              >Email Address<br /><input type="text" name="homeAddress" required
             /></label>
             <label
-              >Primary Phone Number<br /><input type="text" name="homeAddress"
+              >Primary Phone Number<br /><input
+                type="text"
+                name="homeAddress"
+                required
             /></label>
           </div>
           <hr />
@@ -140,7 +149,7 @@
           <div class="employment-info">
             <label>
               Employment status<br />
-              <select name="source">
+              <select name="source" required>
                 <option value="" selected disabled>Select status</option>
                 <option value="">Employed</option>
                 <option value="">Self-Employed</option>
@@ -163,11 +172,13 @@
                 >Your Annual Income (Before Taxes)<br /><input
                   type="text"
                   name="annual-income"
+                  required
               /></label>
               <label
                 >Other Household Income (Before Taxes)<br /><input
                   type="text"
                   name="homeAddress"
+                  required
               /></label>
               <label class="morgage">
                 Do you have a mortgage? (Optional)<br />
@@ -175,13 +186,13 @@
                 <label><input type="radio" name="morgage" />No</label>
               </label>
               <label
-                >Monthly Rent/Mortgage (Option)<br /><input
+                >Monthly Rent/Mortgage (Optional)<br /><input
                   type="text"
                   name="homeAddress"
               /></label>
               <label
                 >Do you have any bank accounts?
-                <select name="source">
+                <select name="source" required>
                   <option value="" selected disabled>Select a type</option>
                   <option value="">Chequing and Savings</option>
                   <option value="">Chequing Only</option>
