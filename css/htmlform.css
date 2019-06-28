@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #faf8f9;
+  font-family: "Roboto", sans-serif;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  background: #fff;
+  border: 3px solid #e7e3e6;
+  padding: 30px;
+}
+
+.top-logo img {
+  margin: auto;
+  display: block;
+}
+
+p {
+  font-size: 20px;
+  color: #004976;
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+#applyNow input[type="text"],
+input[type="date"],
+select {
+  height: 30px;
+  width: 400px;
+  font-size: 14px;
+}
+
+#applyNow input[type="radio"],
+input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#applyNow input[type="submit"] {
+  width: 500px;
+  background: green;
+  height: 50px;
+  color: bisque;
+  display: block;
+  margin: auto;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px;
+  grid-gap: 10px;
+}
+
+.personal,
+.financial-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 60px 60px 60px;
+  grid-gap: 10px;
+}
+
+label {
+  padding-bottom: 20px;
+}
+
+.disclosure {
+  font-size: 14px;
+}
+
+hr {
+  height: 0rem;
+  opacity: 0.3;
+  background-color: #e7e3e6;
+  margin-top: 25px;
+}
