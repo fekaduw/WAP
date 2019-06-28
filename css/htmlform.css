@@ -46,12 +46,13 @@ input[type="checkbox"] {
 }
 
 #applyNow input[type="submit"] {
-  width: 500px;
+  width: 600px;
   background: green;
   height: 50px;
-  color: bisque;
+  color: #e7e3e6;
   display: block;
   margin: auto;
+  font-size: 15px;
 }
 
 .contact-info {
