@@ -20,9 +20,19 @@
       <div class="form">
         <form action="#" id="applyNow">
           <div class="personal">
-            <label>First Name<br /><input type="text" name="firstName"/></label>
             <label
-              >Second Name<br /><input type="text" name="secondName"
+              >First Name<br /><input
+                type="text"
+                name="firstName"
+                pattern="^[a-zA-Z][a-zA-Z]{1,}"
+                maxlength="15"
+            /></label>
+            <label
+              >Second Name<br /><input
+                type="text"
+                name="secondName"
+                pattern="^[a-zA-Z][a-zA-Z]{1,}"
+                maxlength="15"
             /></label>
             <label
               >Date of birth<br /><input type="date" name="firstName"
@@ -31,11 +41,15 @@
               >Mother’s Maiden Name<br /><input
                 type="text"
                 name="mothersMaidenName"
+                pattern="^[a-zA-Z][a-zA-Z]{1,}"
+                maxlength="25"
             /></label>
             <label
               >Social Insurance Number (Optional)<br /><input
                 type="text"
-                name="firstName"
+                name="sin"
+                maxlength="11"
+                pattern="\d{3}-\d{3}-\d{3}"
             /></label>
             <label>
               How did you learn about this card? (Optional)<br />
@@ -63,11 +77,47 @@
               >Home Address (No P.O. Boxes)<br /><input
                 type="text"
                 name="homeAddress"
+                pattern="^(\w)[\w\s]+"
             /></label>
             <label
               >Suite/Apt. # (if Applicable)<br /><input
                 type="text"
-                name="homeAddress"
+                name="suite"
+                maxlength="15"
+                pattern="[\w\s]*"
+            /></label>
+            <label
+              >City<br /><input
+                type="text"
+                name="city"
+                maxlength="20"
+                pattern="[\w\s]*"
+            /></label>
+            <label
+              >Province<br />
+              <select name="province">
+                <option value="" selected disabled>Select province</option>
+                <option value="AB">AB</option>
+                <option value="BC">BC</option>
+                <option value="MB">MB</option>
+                <option value="NB">NB</option>
+                <option value="NL">NL</option>
+                <option value="NS">NS</option>
+                <option value="NT">NT</option>
+                <option value="NU">NU</option>
+                <option value="ON">ON</option>
+                <option value="PE">PE</option>
+                <option value="QC">QC</option>
+                <option value="SK">SK</option>
+                <option value="YT">YT</option>
+              </select>
+            </label>
+            <label
+              >Postal Code<br /><input
+                type="text"
+                name="postalcode"
+                maxlength="2"
+                pattern="^[a-zA-Z][0-9]"
             /></label>
             <label
               >Email Address<br /><input type="text" name="homeAddress"
