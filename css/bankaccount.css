@@ -19,6 +19,7 @@ input[type="button"] {
 input[type="text"] {
   width: 250px;
   height: 25px;
+  background: #ffebee;
 }
 
 h1 {
@@ -31,4 +32,5 @@ h1 {
 textarea {
   font-size: 18pt;
   width: 620px;
+  background: #ffebee;
 }
