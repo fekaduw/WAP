@@ -1,0 +1,34 @@
+body {
+  background: rgb(3, 85, 122);
+  width: 80%;
+  margin: auto;
+}
+
+.main-container {
+  width: 700px;
+  margin: auto;
+}
+
+input[type="button"] {
+  padding: 10px;
+  background: #b00020;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 250px;
+  height: 25px;
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 24pt;
+  text-align: center;
+  color: aliceblue;
+}
+
+textarea {
+  font-size: 18pt;
+  width: 620px;
+}
