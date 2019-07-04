@@ -80,3 +80,10 @@ em strong {
   color: #fff;
   font-weight: bold;
 }
+
+li img {
+  float: right;
+  width: 150px;
+  height: 200px;
+  border: 1px solid darksalmon;
+}
