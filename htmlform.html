@@ -126,12 +126,17 @@
                 required
             /></label>
             <label
-              >Email Address<br /><input type="text" name="homeAddress" required
+              >Email Address<br /><input
+                type="text"
+                name="homeAddress"
+                pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
+                required
             /></label>
             <label
               >Primary Phone Number<br /><input
                 type="text"
                 name="homeAddress"
+                pattern="\d{10}"
                 required
             /></label>
           </div>
@@ -172,12 +177,14 @@
                 >Your Annual Income (Before Taxes)<br /><input
                   type="text"
                   name="annual-income"
+                  pattern="\d"
                   required
               /></label>
               <label
                 >Other Household Income (Before Taxes)<br /><input
                   type="text"
                   name="homeAddress"
+                  pattern="\d"
                   required
               /></label>
               <label class="morgage">
@@ -189,6 +196,7 @@
                 >Monthly Rent/Mortgage (Optional)<br /><input
                   type="text"
                   name="homeAddress"
+                  pattern="\d"
               /></label>
               <label
                 >Do you have any bank accounts?
