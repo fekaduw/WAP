@@ -124,3 +124,40 @@ dd ul {
   bottom: 0;
   opacity: 0.5;
 }
+
+.modal {
+  display: block; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #f4f4f4;
+  margin: 25% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  height: 20%;
+}
+
+input[type="button"]#close {
+  width: 200px;
+  padding: 10px;
+  height: 50px;
+  background: #bb0002;
+  margin-top: 30px;
+  color: #fff;
+}
+
+.modal-content .modal-header {
+  font-size: 24pt;
+  font-weight: bold;
+}

@@ -13,16 +13,9 @@ function createAccount() {
         accountName = acctName;
         deposit = dep;
         setBalance();
-        // balance += parseFloat(deposit);
-      },
-      getAccountName: function() {
-        return accountName;
-      },
-      getBalance: function() {
-        return balance;
       },
       getAccountInfo: function() {
-        accountInfoList.push(this.getAccountName(), this.getBalance());
+        accountInfoList.push(accountName, balance);
         return accountInfoList;
       }
     };

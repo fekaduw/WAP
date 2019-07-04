@@ -5,9 +5,27 @@
     <meta charset="utf-8" />
     <link href="css/movie.css" type="text/css" rel="stylesheet" />
     <link href="images/rotten.gif" type="image/gif" rel="shortcut icon" />
+    <script src="js/moviereview.js" type="text/javascript"></script>
   </head>
 
   <body>
+    <!-- popup window -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <p class="modal-header">Welcome to Rancid Tomatoes.</p>
+        <p class="modal-content-text">
+          A dedicated site for movie reviews. Enjoy reading the reviews of our
+          special movie reviewers as well as regular movieholics. You can also
+          engage in reviewing your favorite movies and share it with the rest of
+          the movie community. Pleased to have you here...
+        </p>
+        <input type="button" value="Close" id="close" onclick="close();" />
+      </div>
+    </div>
+
+    <!-- end of popup window -->
+
     <div class="top-banner">
       <div class="image-container">
         <img src="images/banner.png" alt="Rancid Tomatoes" />
